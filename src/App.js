@@ -1,23 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='box'>
+      <span className='borderLine'></span>
+      <form>
+        <h2>Sign in</h2>
+        <div className='inputBox'>
+          <input type={'text'} required='required'></input>
+          <span>Username</span>
+          <i></i>
+        </div>
+        <div className='inputBox'>
+          <input type={'password'} required='required'></input>
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div className='links'>
+          <a href='#'>Forgot Password</a>
+          <a href='#'>Sign up</a>
+        </div>
+        <input type={'submit'} value="login"></input>
+
+      </form><form>
+        <h2>Sign in</h2>
+        <div className='inputBox'>
+          <input type={'text'} required='required'></input>
+          <span>Username</span>
+          <i></i>
+        </div>
+        <div className='inputBox'>
+          <input type={'password'} required='required'></input>
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div className='links'>
+          <a href='#'>Forgot Password</a>
+          <a href='#'>Sign up</a>
+        </div>
+        <input type={'submit'} value="login"></input>
+
+      </form>
+      
+
     </div>
   );
 }
